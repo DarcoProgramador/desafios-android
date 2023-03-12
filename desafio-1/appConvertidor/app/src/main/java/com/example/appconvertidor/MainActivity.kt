@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val medida = Medidas()
+        var convert : conversion
 
         //--Obteniendo Datos
         val rbgOrigen : RadioGroup = findViewById(R.id.rbgMedidaOrigen)
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         result.text = ""
 
         btnConvertir.setOnClickListener {
+
             //Comprobando que el numero
             if(num.text.isEmpty()){
                 val alerta = AlertDialog.Builder(this)
@@ -55,17 +57,17 @@ class MainActivity : AppCompatActivity() {
             //Convirtiendo de medida origen a destino
             when (indexOrigen){
                 0 -> {
-                    val convert : conversion = Kilometro()
+                    convert = Kilometro()
                     val numComvert:Float = convert.conversion(number, medida.medidas[indexDestino]!!)
                     result.text = "$numComvert ${medida.nomMedida(indexDestino)}"
                 }
                 1 -> {
-                    val convert : conversion = Metro()
+                    convert = Metro()
                     val numComvert:Float = convert.conversion(number, medida.medidas[indexDestino]!!)
                     result.text = "$numComvert ${medida.nomMedida(indexDestino)}"
                 }
                 2 -> {
-                    val convert : conversion = Centimetro()
+                    convert = Centimetro()
                     val numComvert:Float = convert.conversion(number, medida.medidas[indexDestino]!!)
                     result.text = "$numComvert ${medida.nomMedida(indexDestino)}"
                 }
