@@ -7,6 +7,6 @@
     <string name="strM">Metro</string>
     <string name="strCM">Centímetro</string>
     <string name="strConvert">Valor a convertir:</string>
-    <string name="strBtnConvert">Convertir:</string>
+    <string name="strBtnConvert">Convertir</string>
     <string name="strDigit">"Digite un numero .."</string>
 </resources>

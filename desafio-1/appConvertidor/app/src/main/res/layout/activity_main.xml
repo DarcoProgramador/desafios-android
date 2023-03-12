@@ -81,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margen3"
-            android:text="@string/strOrigin"
+            android:text="@string/strDestiny"
             android:textSize="@dimen/tamtexto2"
             android:textAlignment="textStart"
             android:layout_marginStart="@dimen/margen2"
