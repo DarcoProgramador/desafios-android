@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alto1">36dp</dimen>
+    <dimen name="alto2">42dp</dimen>
+    <dimen name="alto3">50dp</dimen>
+    <dimen name="alto4">68dp</dimen>
+    <dimen name="margen1">10dp</dimen>
+    <dimen name="margen2">25dp</dimen>
+    <dimen name="margen3">50dp</dimen>
+    <dimen name="tamContainer">225dp</dimen>
+    <dimen name="tamtexto1">16sp</dimen>
+    <dimen name="tamtexto2">24sp</dimen>
+    <dimen name="tamtexto3">32sp</dimen>
+    <dimen name="altotexto">10sp</dimen>
+</resources>
