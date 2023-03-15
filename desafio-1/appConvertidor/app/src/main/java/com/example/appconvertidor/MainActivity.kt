@@ -3,11 +3,7 @@ package com.example.appconvertidor
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioGroup
-import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
+import android.widget.*
 import com.example.appconvertidor.models.*
 
 class MainActivity : AppCompatActivity() {
@@ -33,10 +29,7 @@ class MainActivity : AppCompatActivity() {
 
             //Comprobando que el numero
             if(num.text.isEmpty()){
-                val alerta = AlertDialog.Builder(this)
-                    .setTitle("Error")
-                    .setMessage("Debe haber un numero el cual convertir")
-                alerta.show()
+                Toast.makeText(applicationContext, "Debe haber un numero el cual convertir", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
@@ -47,10 +40,7 @@ class MainActivity : AppCompatActivity() {
             val indexDestino = medida.findCheckRBId(rbgDestino)
 
             if(indexDestino == -1 || indexOrigen == -1){
-                val alerta = AlertDialog.Builder(this)
-                    .setTitle("Error")
-                    .setMessage("Debe seleccionar la medida origen y destino para poder convertir")
-                alerta.show()
+                Toast.makeText(applicationContext, "Debe seleccionar la medida origen y destino para poder convertir", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
