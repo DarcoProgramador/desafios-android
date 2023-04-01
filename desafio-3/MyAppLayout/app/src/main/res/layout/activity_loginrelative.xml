@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imgArtista"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lion_s_kennedy"
+        android:contentDescription = "@string/img_lion"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtNombreArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/glenda_barrios"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/imgArtista"
+        />
+
+    <TextView
+        android:id="@+id/txtPaisOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Raccon_City"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/txtNombreArtista"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtPaisOrigen"
+        />
+
+    <TextView
+        android:id="@+id/txtDescripcionQuienSoy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strDescripcionQuienSoy"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_below="@id/txtPaisOrigen"
+
+        tools:ignore="VisualLintLongText"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imagetwitter"
+        android:layout_width="76dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_twitter"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/txtdirtwitter"
+        android:contentDescription="@string/svg_twitter"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtdirtwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="left|center"
+        android:text="@string/strdirtwitter"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap,RtlHardcoded"
+        />
+
+</RelativeLayout>
